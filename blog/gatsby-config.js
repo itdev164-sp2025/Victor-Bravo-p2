@@ -17,9 +17,16 @@ module.exports = {
       name: `Victor Bravo`,
       company: `Tutoriales4U Inc.`,
       address: `PO Box 4574`,
-    }
+    },
   },
   plugins: [
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `rafdflz4lvb8`,
+        accessToken: `diRi_luqlTZJZ00T4KCrZ0FKvsqPssYaCukJFxzNsP4`,
+      },
+    },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
