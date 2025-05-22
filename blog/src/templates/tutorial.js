@@ -3,11 +3,12 @@ import { graphql } from "gatsby";
 import Layout from "../components/layout";
 
 const Tutorial = ({ data }) => {
-    const {title} = data.contentfulVideoTutorials;
+    const {title, body} = data.contentfulVideoTutorials;
 
     return (
         <Layout>
             <h1>{title}</h1>
+            <div dangerouslySetInnerHTML={{ __html: body.childMarkdownRemark.html }}></div>
         </Layout>
     )
 }
@@ -19,6 +20,11 @@ export const pageQuery = graphql`
     contentfulVideoTutorials(slug: { eq: $slug }) {
       title
       slug
+      body {
+        childMarkdownRemark {
+          html
+        }
+      }
     }
   }
 `
