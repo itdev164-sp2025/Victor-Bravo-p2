@@ -3,7 +3,7 @@ import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import * as styles from "./index.module.css"
+import * as styles from "../components/index.module.css"
 
 const IndexPage = ({ data }) => {
   <Layout>

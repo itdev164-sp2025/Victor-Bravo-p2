@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 import Layout from "../components/layout";
 
 const Tutorial = ({ data }) => {
-    const {title} = data.contentfulVideoTutorial;
+    const {title} = data.contentfulVideoTutorials;
 
     return (
         <Layout>
