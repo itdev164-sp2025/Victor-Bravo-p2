@@ -1,12 +1,8 @@
 import React from "react"
-import mainHeaderImage from "./images/react.png"
+import mainHeaderImage from "./images/videotutor-icon.png"
 
 const images = {
   mainHeaderImage,
-}
-
-const icons = {
-  Search: <Search />,
 }
 
 const theme = {

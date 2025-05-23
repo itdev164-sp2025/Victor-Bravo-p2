@@ -34,12 +34,12 @@ const Layout = ({ children }) => {
     <ThemeProvider theme={Gray}>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <Content>
-        <Main>{children}</Main>
+        <Main m={20}>{children}</Main>
         <Footer>
-          © {new Date().getFullYear()}, Built with
+          © {new Date().getFullYear()} &middot; Built with
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a>
-          </Footer>
+        </Footer>
       </Content>
     </ThemeProvider>
   )
