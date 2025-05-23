@@ -2,6 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import { H1 } from "../Heading"
+import {Section} from "../Section"
 
 
 const StyledHeader = styled.header`
@@ -21,12 +22,12 @@ const StyledLink = styled(Link)`
 
 const Header = ({ siteTitle }) => (
   <StyledHeader>
-    <StyledLink to="/">
-    <H1>
-      {siteTitle}
-    </H1>
-    </StyledLink>
-  </StyledHeader>    
+    <Section width={11 / 12}>
+      <StyledLink to="/">
+        <H1>{siteTitle}</H1>
+      </StyledLink>
+    </Section>
+  </StyledHeader>
 )
 
 export {Header}
